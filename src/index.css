@@ -29,7 +29,7 @@ a {
 }
 
 .navbar {
-  height: 78px;
+  height: 110px;
   padding: 0 5vw;
   display: flex;
   align-items: center;
@@ -156,6 +156,25 @@ a {
   bottom: 25px;
   color: white;
   font-size: 0.8rem;
+}
+
+.realHeroImage {
+  background: #111;
+  filter: none;
+}
+
+.realHeroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.navbarLogo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .researchBlock {
@@ -300,6 +319,209 @@ footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
 }
+.people {
+  padding: 7vw 5vw;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.peopleIntro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5vw;
+  align-items: end;
+  margin-bottom: 3.5rem;
+}
+
+.peopleIntro h2 {
+  font-size: clamp(3rem, 6vw, 7rem);
+  line-height: 0.95;
+  margin: 0;
+}
+
+.peopleIntro p:last-child {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.peopleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.personCard {
+  background: white;
+  padding: 1.4rem;
+}
+
+.personPhoto {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--line);
+  margin-bottom: 1.3rem;
+}
+
+.placeholder {
+  background: #f2efea;
+  display: grid;
+  place-items: center;
+}
+
+.placeholder::after {
+  content: "Photo Coming Soon";
+  color: #8c867f;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.personPhoto::after {
+  content: "Photo Coming Soon";
+  color: #8c867f;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.personInfo h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 0.4rem;
+}
+
+.personInfo p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.piCard {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-bottom: 2rem;
+}
+
+.piPhoto {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.piText {
+  background: white;
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.piText h3 {
+  font-size: clamp(3rem, 6vw, 7rem);
+  line-height: 0.95;
+  margin: 0 0 1.5rem;
+}
+
+.piText p:last-child {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.08rem;
+  max-width: 680px;
+}
+
+.publications {
+  padding: 7vw 5vw;
+  background: #f3efea;
+  border-bottom: 1px solid var(--line);
+}
+
+.publicationsIntro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5vw;
+  align-items: end;
+  margin-bottom: 3.5rem;
+}
+
+.publicationsIntro h2 {
+  font-size: clamp(3rem, 6vw, 7rem);
+  line-height: 0.95;
+  margin: 0;
+}
+
+.publicationsIntro p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.publicationCTA {
+  display: grid;
+  grid-template-columns: 220px 1fr 360px;
+  background: white;
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px rgba(16,16,16,.12);
+}
+
+.publicationIcon {
+  display: grid;
+  place-items: center;
+  border-right: 1px solid var(--line);
+}
+
+.publicationIcon::before {
+  content: "▤";
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #f3efea;
+  color: var(--red);
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+}
+
+.publicationText {
+  padding: 4rem;
+  border-right: 1px solid var(--line);
+}
+
+.pubmedCard {
+  background: var(--red);
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pubmedCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(197, 5, 12, 0.30);
+}
+
+.pubmedCard span:last-child {
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.externalIcon {
+  font-size: 3rem;
+}
 
 @media (max-width: 900px) {
   .navbar,
@@ -312,11 +534,26 @@ footer {
   }
 
   .hero,
-  .researchBlock,
-  .projectGrid,
-  .join {
-    grid-template-columns: 1fr;
-  }
+.researchBlock,
+.projectGrid,
+.peopleIntro,
+.peopleGrid,
+.piCard,
+.publicationsIntro,
+.publicationCTA,
+.join {
+  grid-template-columns: 1fr;
+}
+
+.publicationCTA {
+  grid-template-columns: 1fr;
+}
+
+.publicationIcon,
+.publicationText {
+  border-right: none;
+  border-bottom: 1px solid var(--line);
+}
 
   .heroText,
   .number,
