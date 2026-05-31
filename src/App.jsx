@@ -242,6 +242,33 @@ export default function App() {
 
       </section>
 
+<section className="udpSection">
+  <div className="udpText">
+    <p className="eyebrow">Clinical Program</p>
+
+    <h2>Looking for answers to an undiagnosed rare disease?</h2>
+
+    <p>
+      The UW Undiagnosed Disease Program (UW-UDP) evaluates children and adults with suspected rare genetic disorders who remain without a diagnosis despite extensive prior testing. As a designated clinical site of the NIH Undiagnosed Diseases Network (UDN), the program combines advanced genomic technologies, deep phenotyping, multidisciplinary clinical expertise, and research-driven investigation to identify underlying disease mechanisms and provide answers for patients and families. By bridging clinical care and scientific discovery, UW-UDP helps shorten the diagnostic odyssey while advancing our understanding of rare genetic disease.
+    </p>
+  </div>
+
+  <a
+    href="https://precisionmedicine.wisc.edu/uw-undiagnosed-genetic-disease-program/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="udpCard"
+  >
+    <span className="externalIcon">↗</span>
+
+    <span>
+      Learn About
+      <br />
+      UW-UDP →
+    </span>
+  </a>
+</section>
+
       <section id="join" className="join">
         <div>
           <p className="eyebrow">Join Us</p>
