@@ -42,6 +42,11 @@ a {
   z-index: 10;
 }
 
+.menuToggle,
+.menuButton {
+  display: none;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -524,14 +529,40 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .navbar,
-  .links {
-    flex-direction: column;
-    height: auto;
-    align-items: flex-start;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
+  .navbar {
+  height: auto;
+  min-height: 92px;
+  padding: 1rem 5vw;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.menuButton span {
+  width: 28px;
+  height: 2px;
+  background: var(--ink);
+  display: block;
+}
+
+.links {
+  display: none;
+  grid-column: 1 / -1;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 2rem 0 1rem;
+}
+
+.menuToggle:checked ~ .links {
+  display: flex;
+}
 
   .hero,
 .researchBlock,

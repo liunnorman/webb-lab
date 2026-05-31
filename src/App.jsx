@@ -52,23 +52,31 @@ export default function App() {
   return (
     <main>
       <nav className="navbar">
-        <div className="brand">
-          <img src={logo} alt="Webb Laboratory" className="navbarLogo" />
+  <div className="brand">
+    <img src={logo} alt="Webb Laboratory" className="navbarLogo" />
 
-          <div>
-            <strong>WEBB LABORATORY</strong>
-            <span>University of Wisconsin–Madison</span>
-          </div>
-        </div>
+    <div>
+      <strong>WEBB LABORATORY</strong>
+      <span>University of Wisconsin–Madison</span>
+    </div>
+  </div>
 
-        <div className="links">
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#people">People</a>
-          <a href="#publications">Publications</a>
-          <a href="#join">Join Us</a>
-        </div>
-      </nav>
+  <input type="checkbox" id="menu-toggle" className="menuToggle" />
+
+  <label htmlFor="menu-toggle" className="menuButton">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <div className="links">
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#people">People</a>
+    <a href="#publications">Publications</a>
+    <a href="#join">Join Us</a>
+  </div>
+</nav>
 
       <section className="hero">
         <div className="heroText">
