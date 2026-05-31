@@ -4,6 +4,7 @@ import logo from "./assets/logo.png";
 import brynHeadshot from "./assets/bryn-webb.jpg";
 import liaHeadshot from "./assets/lia.jpg";
 import normanHeadshot from "./assets/norman.jpg";
+import laurenHeadshot from "./assets/lauren.jpg";
 
 export default function App() {
   const projects = [
@@ -29,6 +30,11 @@ export default function App() {
     role: "Medical Student",
     image: normanHeadshot,
   },
+  {
+  name: "Lauren Onigkeit",
+  role: "Undergraduate Research Assistant",
+  image: laurenHeadshot
+},
 ];
 
   const publications = [
