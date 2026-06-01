@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./index.css";
 import heroImage from "./assets/hero.jpg";
 import logo from "./assets/logo.png";
@@ -245,6 +246,8 @@ export default function App() {
   </a>
 </div>
 
+<LatestPublications />
+
 
       </section>
 
@@ -309,5 +312,38 @@ function ResearchBlock({ number, label, title, text, imageClass }) {
 
       <div className={`researchImage ${imageClass}`}></div>
     </section>
+  );
+}
+
+function LatestPublications() {
+  const [publications, setPublications] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/publications")
+      .then((res) => res.json())
+      .then((data) => setPublications(data))
+      .catch(() => setPublications([]));
+  }, []);
+
+  return (
+    <div className="latestPublications">
+      <p className="eyebrow">Latest Publications</p>
+
+      {publications.map((pub) => (
+        <a
+          href={pub.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="latestPublication"
+          key={pub.id}
+        >
+          <span>{pub.date}</span>
+          <div>
+            <h3>{pub.title}</h3>
+            <p>{pub.journal}</p>
+          </div>
+        </a>
+      ))}
+    </div>
   );
 }

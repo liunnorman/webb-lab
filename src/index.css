@@ -524,6 +524,37 @@ footer {
   line-height: 1.5;
 }
 
+.latestPublications {
+  margin-top: 3rem;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 3rem;
+}
+
+.latestPublication {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.latestPublication span {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.latestPublication h3 {
+  font-size: 1.5rem;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+.latestPublication p {
+  color: var(--muted);
+  margin: 0;
+}
+
 .externalIcon {
   font-size: 3rem;
 }
