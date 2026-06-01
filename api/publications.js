@@ -1,6 +1,11 @@
 export default async function handler(req, res) {
-  const term = encodeURIComponent("Bryn D Webb[Author] OR Webb BD[Author]");
-  const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${term}&retmode=json&retmax=6&sort=pub+date`;
+  const term = encodeURIComponent(
+    '("Webb BD"[Author] OR "Webb Bryn D"[Author]) AND (Wisconsin[Affiliation] OR Icahn[Affiliation])'
+  );
+
+  const searchUrl =
+    `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi` +
+    `?db=pubmed&term=${term}&retmode=json&retmax=20&sort=pub+date`;
 
   const searchResponse = await fetch(searchUrl);
   const searchData = await searchResponse.json();
@@ -11,7 +16,9 @@ export default async function handler(req, res) {
     return res.status(200).json([]);
   }
 
-  const summaryUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${ids.join(",")}&retmode=json`;
+  const summaryUrl =
+    `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi` +
+    `?db=pubmed&id=${ids.join(",")}&retmode=json`;
 
   const summaryResponse = await fetch(summaryUrl);
   const summaryData = await summaryResponse.json();
@@ -30,3 +37,4 @@ export default async function handler(req, res) {
 
   res.status(200).json(publications);
 }
+
