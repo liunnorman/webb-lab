@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const term = encodeURIComponent("Bryn Webb[Author] OR Webb B[Author]");
+  const term = encodeURIComponent("Bryn D Webb[Author] OR Webb BD[Author]");
   const searchUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${term}&retmode=json&retmax=6&sort=pub+date`;
 
   const searchResponse = await fetch(searchUrl);
