@@ -6,6 +6,7 @@ import brynHeadshot from "./assets/bryn-webb.jpg";
 import liaHeadshot from "./assets/lia.jpg";
 import normanHeadshot from "./assets/norman.jpg";
 import laurenHeadshot from "./assets/lauren.jpg";
+import irshadHeadshot from "./assets/irshad.png";
 
 export default function App() {
   const projects = [
@@ -17,10 +18,10 @@ export default function App() {
 
   const people = [
   {
-    name: "Irshad Ali, PhD",
-    role: "Research Staff",
-    image: null,
-  },
+  name: "Irshad Ali, PhD",
+  role: "Research Scientist",
+  image: irshadHeadshot,
+  },  
   {
     name: "Lia Margolin, BS",
     role: "Clinical Research Coordinator",
