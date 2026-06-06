@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const term = encodeURIComponent(
-    '("Webb BD"[Author] OR "Webb Bryn D"[Author] OR "International Consortium on Newborn Sequencing (ICoNS)"[Corporate Author]) AND (Wisconsin[Affiliation] OR Icahn[Affiliation])'
+    '("Webb BD"[Author] OR "Webb Bryn D"[Author] OR "International Consortium on Newborn Sequencing"[Corporate Author]) AND (Wisconsin[Affiliation] OR Icahn[Affiliation])'
   );
 
   const searchUrl =
