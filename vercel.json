@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/diseases/:path*",
+      "destination": "/index.html"
+    }
+  ]
+}

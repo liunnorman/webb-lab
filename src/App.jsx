@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, Route, Routes } from "react-router-dom";
 import "./index.css";
 import heroImage from "./assets/hero.jpg";
 import logo from "./assets/logo.png";
@@ -7,13 +8,44 @@ import liaHeadshot from "./assets/lia.jpg";
 import normanHeadshot from "./assets/norman.jpg";
 import laurenHeadshot from "./assets/lauren.jpg";
 import irshadHeadshot from "./assets/irshad.png";
+import DiseasePage from "./pages/DiseasePage";
+import { diseaseList } from "./pages/diseaseData";
 
 export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/diseases/:slug" element={<DiseasePage />} />
+    </Routes>
+  );
+}
+
+function HomePage() {
   const projects = [
-    ["mt-ARS Disorders", "MARS2 & WARS2"],
-    ["Neurodevelopment", "POU4F1"],
-    ["Congenital Facial Weakness", "Moebius Syndrome"],
-    ["Clinical Genomics", "Undiagnosed Disease Program"],
+    {
+      label: "Mitochondrial Translation",
+      title: "mt-ARS Disorders",
+      text: "Mitochondrial translation disorders studied through rare disease genomics and stem cell modeling.",
+      slug: diseaseList[0].slug,
+    },
+    {
+      label: "Neurodevelopment",
+      title: "POU4F1",
+      text: "POU4F1-related disease studied with stem cell models of neuronal development.",
+      slug: diseaseList[1].slug,
+    },
+    {
+      label: "Congenital Facial Weakness",
+      title: "Moebius Syndrome",
+      text: "Deep phenotyping and genetics for congenital facial weakness and cranial dysinnervation.",
+      slug: diseaseList[2].slug,
+    },
+    {
+      label: "Clinical Genomics",
+      title: "Undiagnosed Disease",
+      text: "Connecting deep phenotyping, genomic testing, and discovery for patients without a diagnosis.",
+      slug: diseaseList[3].slug,
+    },
   ];
 
   const people = [
@@ -39,24 +71,6 @@ export default function App() {
 },
 ];
 
-  const publications = [
-    [
-      "2025",
-      "Generation of an induced pluripotent stem cell line from a patient with combined oxidative phosphorylation deficiency 25.",
-      "Stem Cell Research",
-    ],
-    [
-      "2025",
-      "Functional modeling of rare pediatric neurodevelopmental disorders.",
-      "Manuscript in preparation",
-    ],
-    [
-      "2024",
-      "Exploring the neurodevelopmental consequences of POU4F1 haploinsufficiency in human neurons.",
-      "Society for Neuroscience",
-    ],
-  ];
-
   return (
     <main>
       <nav className="navbar">
@@ -79,7 +93,7 @@ export default function App() {
 
   <div className="links">
     <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
+    <a href="#projects">Disease Pages</a>
     <a href="#people">People</a>
     <a href="#publications">Publications</a>
     <a href="#join">Join Us</a>
@@ -135,17 +149,18 @@ export default function App() {
       </section>
 
       <section id="projects" className="projects">
-        <p className="eyebrow">Research Programs</p>
+        <p className="eyebrow">Disease Pages</p>
 
-        <h2>Discovery platforms for rare disease biology.</h2>
+        <h2>Focused pages for rare disease biology.</h2>
 
         <div className="projectGrid">
-          {projects.map(([label, title], i) => (
-            <article className="projectCard" key={title}>
+          {projects.map(({ label, title, text, slug }, i) => (
+            <Link className="projectCard" to={`/diseases/${slug}`} key={title}>
               <span>{String(i + 1).padStart(2, "0")}</span>
               <p className="cardLabel">{label}</p>
               <h3>{title}</h3>
-            </article>
+              <p>{text}</p>
+            </Link>
           ))}
         </div>
       </section>
