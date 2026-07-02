@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
 import heroImage from "./assets/hero.jpg";
 import logo from "./assets/logo.png";
@@ -13,11 +13,29 @@ import { diseaseList } from "./pages/diseaseData";
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/diseases/:slug" element={<DiseasePage />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/diseases/:slug" element={<DiseasePage />} />
+      </Routes>
+    </>
   );
+}
+
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      document.querySelector(hash)?.scrollIntoView();
+      return;
+    }
+
+    window.scrollTo({ top: 0, left: 0 });
+  }, [pathname, hash]);
+
+  return null;
 }
 
 function HomePage() {
