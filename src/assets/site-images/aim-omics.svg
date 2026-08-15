@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Functional genomics and multi-omics</title>
+  <desc id="desc">A minimal next-generation sequencing flow cell, read lanes, and assay signals.</desc>
+  <rect width="1200" height="620" fill="#f7f3ee"/>
+  <g transform="translate(120 130)">
+    <rect x="0" y="0" width="370" height="230" rx="14" fill="none" stroke="#252525" stroke-width="3" opacity=".28"/>
+    <rect x="70" y="52" width="230" height="126" rx="6" fill="#252525" opacity=".08" stroke="#252525" stroke-width="2"/>
+    <g fill="#252525" opacity=".23">
+      <circle cx="34" cy="34" r="10"/><circle cx="336" cy="34" r="10"/><circle cx="34" cy="196" r="10"/><circle cx="336" cy="196" r="10"/>
+    </g>
+    <g fill="none" stroke="#252525" stroke-width="1.2" opacity=".22">
+      <path d="M95 72h180M95 96h180M95 120h180M95 144h180M95 168h180"/>
+      <path d="M116 58v132M154 58v132M192 58v132M230 58v132M268 58v132"/>
+    </g>
+    <g fill="#c5050c" opacity=".72">
+      <rect x="116" y="96" width="38" height="8"/><rect x="192" y="144" width="38" height="8"/><rect x="230" y="72" width="38" height="8"/>
+    </g>
+  </g>
+  <g transform="translate(610 95)">
+    <g fill="none" stroke="#252525" stroke-width="2" opacity=".2">
+      <path d="M0 48h430M0 104h430M0 160h430M0 216h430M0 272h430M0 328h430"/>
+    </g>
+    <g fill="#252525" opacity=".34">
+      <rect x="0" y="44" width="78" height="7"/><rect x="120" y="100" width="54" height="7"/><rect x="240" y="156" width="88" height="7"/>
+      <rect x="62" y="212" width="112" height="7"/><rect x="280" y="268" width="62" height="7"/><rect x="138" y="324" width="140" height="7"/>
+    </g>
+    <g fill="#c5050c">
+      <rect x="188" y="100" width="54" height="7"/><rect x="338" y="156" width="44" height="7"/><rect x="186" y="268" width="48" height="7"/>
+    </g>
+  </g>
+  <path d="M185 445 C285 370 395 475 500 398 S700 345 805 408 965 470 1085 386" fill="none" stroke="#c5050c" stroke-width="3" opacity=".45" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Moebius syndrome graphic</title>
+  <desc id="desc">Brainstem, ocular motor, and facial nerve pathway motifs.</desc>
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect width="1200" height="760" fill="#c5050c" opacity=".015"/>
+  <g fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M500 125 C430 180 405 280 432 372 C462 475 450 555 392 640" stroke-width="3" opacity=".32"/>
+    <path d="M560 130 C635 190 660 285 632 376 C600 480 615 560 675 642" stroke-width="3" opacity=".32"/>
+    <path d="M530 120 C505 255 510 420 535 650" stroke="#c5050c" stroke-width="2" opacity=".58"/>
+    <path d="M520 300 C390 260 300 270 190 345" stroke-width="2" opacity=".34"/>
+    <path d="M545 365 C690 350 795 390 930 520" stroke-width="2" opacity=".34"/>
+    <path d="M545 430 C715 460 820 440 1035 335" stroke="#c5050c" stroke-width="2" opacity=".5"/>
+  </g>
+  <g fill="#ffffff" stroke="#202020" stroke-width="3" opacity=".9">
+    <circle cx="520" cy="300" r="27"/>
+    <circle cx="545" cy="365" r="27"/>
+    <circle cx="545" cy="430" r="24"/>
+  </g>
+  <g fill="#c5050c">
+    <circle cx="520" cy="300" r="5"/>
+    <circle cx="545" cy="430" r="5"/>
+  </g>
+  <g fill="none" stroke="#202020" opacity=".24">
+    <ellipse cx="185" cy="345" rx="58" ry="28"/>
+    <circle cx="185" cy="345" r="8" fill="#c5050c" stroke="none" opacity=".75"/>
+    <path d="M935 518 C990 485 1045 485 1095 520 C1045 555 990 555 935 518Z"/>
+    <circle cx="1015" cy="520" r="7" fill="#c5050c" stroke="none" opacity=".75"/>
+  </g>
+  <path d="M760 190 C835 145 925 145 1000 190" fill="none" stroke="#202020" opacity=".18"/>
+</svg>

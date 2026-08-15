@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Disease gene discovery</title>
+  <desc id="desc">A separated pedigree and variant track graphic.</desc>
+  <rect width="1200" height="620" fill="#f7f3ee"/>
+  <g fill="none" stroke="#252525" stroke-width="2" opacity=".28">
+    <path d="M160 170h150v90"/>
+    <path d="M310 260h-95v90"/>
+    <path d="M310 260h95v90"/>
+    <path d="M520 170h150v90"/>
+    <path d="M670 260h-90v90"/>
+    <path d="M670 260h90v90"/>
+  </g>
+  <g fill="#f7f3ee" stroke="#252525" stroke-width="3">
+    <rect x="134" y="144" width="52" height="52"/>
+    <circle cx="310" cy="170" r="28"/>
+    <rect x="189" y="324" width="52" height="52"/>
+    <circle cx="405" cy="350" r="28"/>
+    <rect x="494" y="144" width="52" height="52"/>
+    <circle cx="670" cy="170" r="28"/>
+    <rect x="554" y="324" width="52" height="52"/>
+    <circle cx="760" cy="350" r="28"/>
+  </g>
+  <circle cx="310" cy="170" r="17" fill="#c5050c" opacity=".75"/>
+  <rect x="554" y="324" width="52" height="52" fill="#c5050c" opacity=".12"/>
+  <g transform="translate(860 128)">
+    <g fill="none" stroke="#252525" stroke-width="2" opacity=".22">
+      <path d="M0 44h250M0 100h250M0 156h250M0 212h250M0 268h250"/>
+    </g>
+    <g fill="#252525" opacity=".34">
+      <rect x="0" y="41" width="52" height="6"/>
+      <rect x="92" y="97" width="44" height="6"/>
+      <rect x="168" y="153" width="58" height="6"/>
+      <rect x="18" y="209" width="70" height="6"/>
+      <rect x="140" y="265" width="42" height="6"/>
+    </g>
+    <g fill="#c5050c">
+      <rect x="150" y="97" width="46" height="6"/>
+      <rect x="96" y="209" width="32" height="6"/>
+    </g>
+  </g>
+</svg>

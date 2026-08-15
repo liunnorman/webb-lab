@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Stem cell disease modeling</title>
+  <desc id="desc">Stem-cell colonies transition into neuron-like cells.</desc>
+  <rect width="1200" height="620" fill="#f7f3ee"/>
+  <g transform="translate(145 145)">
+    <circle cx="180" cy="170" r="150" fill="none" stroke="#252525" stroke-width="3" opacity=".16"/>
+    <circle cx="180" cy="170" r="120" fill="none" stroke="#252525" stroke-width="1.5" opacity=".1"/>
+    <g fill="#252525" opacity=".2">
+      <circle cx="125" cy="130" r="24"/><circle cx="175" cy="116" r="22"/><circle cx="226" cy="137" r="24"/>
+      <circle cx="142" cy="198" r="25"/><circle cx="205" cy="205" r="23"/><circle cx="255" cy="184" r="21"/>
+    </g>
+    <g fill="#c5050c" opacity=".72">
+      <circle cx="125" cy="130" r="6"/><circle cx="226" cy="137" r="6"/><circle cx="142" cy="198" r="7"/><circle cx="205" cy="205" r="6"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#252525" stroke-linecap="round" stroke-width="2.2" opacity=".3">
+    <path d="M520 305 C590 285 625 250 670 205"/>
+    <path d="M520 305 C610 350 680 330 765 385"/>
+    <path d="M520 305 C600 235 680 275 760 230 S940 130 1060 205"/>
+    <path d="M765 385 C850 330 940 375 1040 315"/>
+    <path d="M760 230 C820 260 870 285 930 260"/>
+  </g>
+  <g fill="#f7f3ee" stroke="#252525" stroke-width="3">
+    <circle cx="520" cy="305" r="32"/>
+    <circle cx="760" cy="230" r="24"/>
+    <circle cx="765" cy="385" r="26"/>
+    <circle cx="1040" cy="315" r="22"/>
+  </g>
+  <g fill="#c5050c" opacity=".76">
+    <circle cx="520" cy="305" r="7"/>
+    <circle cx="760" cy="230" r="5"/>
+    <circle cx="765" cy="385" r="6"/>
+  </g>
+  <path d="M430 305h55" stroke="#c5050c" stroke-width="2.5" opacity=".55"/>
+</svg>

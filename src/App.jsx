@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import "./index.css";
-import heroImage from "./assets/hero.jpg";
+import heroMinimalImage from "./assets/site-images/hero-minimal.svg";
+import aimGeneDiscoveryImage from "./assets/site-images/aim-gene-discovery.svg";
+import aimStemCellImage from "./assets/site-images/aim-stem-cell.svg";
+import aimOmicsImage from "./assets/site-images/aim-omics.svg";
 import logo from "./assets/logo.png";
 import brynHeadshot from "./assets/bryn-webb.jpg";
 import liaHeadshot from "./assets/lia.jpg";
@@ -103,7 +106,7 @@ function HomePage() {
 
     <div>
       <strong>WEBB LABORATORY</strong>
-      <span>University of Wisconsin–Madison</span>
+      <span>University of Wisconsin School of Medicine and Public Health</span>
     </div>
   </div>
 
@@ -141,8 +144,8 @@ function HomePage() {
         </div>
 
         <div className="heroImage realHeroImage">
-          <img src={heroImage} alt="hiPSC-derived cortical neurons" />
-          <span>hiPSC-derived cortical neurons</span>
+          <img src={heroMinimalImage} alt="Rare disease research graphic" />
+          <span>Rare disease discovery</span>
         </div>
       </section>
 
@@ -153,6 +156,8 @@ function HomePage() {
           title="From Families to Function"
           text="We connect unresolved clinical presentations with genomic discovery and functional validation."
           imageClass="imageGene"
+          image={aimGeneDiscoveryImage}
+          imageAlt="Disease gene discovery graphic"
         />
 
         <ResearchBlock
@@ -161,6 +166,8 @@ function HomePage() {
           title="Modeling Development. Revealing Mechanisms."
           text="Patient-derived and engineered iPSC systems allow us to study rare diseases in human cells."
           imageClass="imageStem"
+          image={aimStemCellImage}
+          imageAlt="Stem cell disease modeling graphic"
         />
 
         <ResearchBlock
@@ -169,6 +176,8 @@ function HomePage() {
           title="Integrating Data. Driving Discovery."
           text="Transcriptomics, mitochondrial assays, and model systems help uncover disease mechanisms."
           imageClass="imageOmics"
+          image={aimOmicsImage}
+          imageAlt="Functional genomics and multi-omics graphic"
         />
       </section>
 
@@ -333,13 +342,13 @@ function HomePage() {
 
       <footer>
         <strong>Webb Laboratory</strong>
-        <span>University of Wisconsin–Madison</span>
+        <span>University of Wisconsin School of Medicine and Public Health</span>
       </footer>
     </main>
   );
 }
 
-function ResearchBlock({ number, label, title, text, imageClass }) {
+function ResearchBlock({ number, label, title, text, imageClass, image, imageAlt }) {
   return (
     <section className="researchBlock">
       <div className="number">{number}</div>
@@ -350,7 +359,9 @@ function ResearchBlock({ number, label, title, text, imageClass }) {
         <p>{text}</p>
       </div>
 
-      <div className={`researchImage ${imageClass}`}></div>
+      <figure className={`researchImage ${imageClass}`}>
+        <img src={image} alt={imageAlt} />
+      </figure>
     </section>
   );
 }

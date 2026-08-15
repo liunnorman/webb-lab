@@ -1,6 +1,17 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 import logo from "../assets/logo.png";
+import diseaseMtarsImage from "../assets/site-images/disease-mtars.svg";
+import diseasePou4f1Image from "../assets/site-images/disease-pou4f1.svg";
+import diseaseMoebiusImage from "../assets/site-images/disease-moebius.svg";
+import diseaseUndiagnosedImage from "../assets/site-images/disease-undiagnosed.svg";
 import { diseaseList } from "./diseaseData";
+
+const diseaseImages = {
+  "mt-ars-disorders": diseaseMtarsImage,
+  pou4f1: diseasePou4f1Image,
+  moebius: diseaseMoebiusImage,
+  "undiagnosed-disease": diseaseUndiagnosedImage,
+};
 
 export default function DiseasePage() {
   const { slug } = useParams();
@@ -14,6 +25,8 @@ export default function DiseasePage() {
   if (!disease) {
     return <Navigate to="/" replace />;
   }
+
+  const heroImage = diseaseImages[disease.slug] ?? diseaseUndiagnosedImage;
 
   const sections = [
     [
@@ -77,6 +90,11 @@ export default function DiseasePage() {
           <h1>{disease.title}</h1>
           <p>{disease.overview}</p>
         </div>
+
+        <figure className="diseaseHeroImage">
+          <img src={heroImage} alt={`${disease.title} research graphic`} />
+          <figcaption>{disease.title} research</figcaption>
+        </figure>
       </section>
 
       <div className="backBand">
@@ -94,7 +112,7 @@ export default function DiseasePage() {
 
       <footer>
         <strong>Webb Laboratory</strong>
-        <span>University of Wisconsin–Madison</span>
+        <span>University of Wisconsin School of Medicine and Public Health</span>
       </footer>
     </main>
   );
@@ -107,7 +125,7 @@ function SiteNav() {
         <img src={logo} alt="Webb Laboratory" className="navbarLogo" />
         <div>
           <strong>WEBB LABORATORY</strong>
-          <span>University of Wisconsin–Madison</span>
+          <span>University of Wisconsin School of Medicine and Public Health</span>
         </div>
       </Link>
 
