@@ -26,13 +26,19 @@ export default function BrynProfile() {
 
           <div className="profileActions">
             <a
-              href="https://pubmed.ncbi.nlm.nih.gov/?term=Webb+Bryn"
+              href="https://www.pediatrics.wisc.edu/staff/webb-md-bryn/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              PubMed →
+              Pediatrics Profile →
             </a>
-            <Link to="/#research">Lab Research →</Link>
+            <a
+              href="https://precisionmedicine.wisc.edu/staff/webb-bryn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Precision Medicine Profile →
+            </a>
           </div>
         </div>
       </section>
@@ -55,7 +61,28 @@ export default function BrynProfile() {
           </div>
 
           <div>
+            <h2>Board Certifications</h2>
+            <p>Clinical Genetics and Genomics</p>
+            <p>Clinical Molecular Genetics</p>
+            <p>Pediatrics</p>
+          </div>
+
+          <div>
             <h2>On the Web</h2>
+            <a
+              href="https://www.pediatrics.wisc.edu/staff/webb-md-bryn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              UW Pediatrics Profile →
+            </a>
+            <a
+              href="https://precisionmedicine.wisc.edu/staff/webb-bryn/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Precision Medicine Profile →
+            </a>
             <a
               href="https://pubmed.ncbi.nlm.nih.gov/?term=Webb+Bryn"
               target="_blank"
@@ -68,26 +95,45 @@ export default function BrynProfile() {
 
         <div className="profileMain">
         <div className="profileSection">
-          <h2>Overview</h2>
+          <h2>Biography</h2>
           <div>
             <p>
-              The Webb Laboratory works at the intersection of pediatric
-              genetics, rare disease discovery, stem cell biology, and
-              functional genomics. Dr. Webb's group connects clinical
-              observations with human cellular models to better understand how
-              genetic variation contributes to rare pediatric disease.
+              Dr. Webb is a physician-scientist whose work centers on children
+              and families affected by rare genetic disorders. Her laboratory
+              brings together clinical genetics, disease gene discovery, stem
+              cell modeling, and functional genomics to better understand the
+              molecular mechanisms that underlie rare pediatric disease.
+            </p>
+
+            <p>
+              She trained in pediatrics, clinical genetics, and molecular
+              genetics, and applies that background to translational research
+              questions that begin with careful patient phenotyping and extend
+              into human cellular models. The Webb Laboratory focuses on
+              connecting clinical observations with experimental systems that
+              can clarify disease mechanisms and support future diagnostic and
+              therapeutic work.
             </p>
           </div>
         </div>
 
         <div className="profileSection">
-          <h2>Research Focus</h2>
-          <div>
-            <p>
-              The lab studies rare neurodevelopmental and congenital disorders
-              through deep phenotyping, genomic discovery, patient-derived stem
-              cell models, and disease-relevant functional assays.
-            </p>
+          <h2>Credentials &amp; Training</h2>
+          <div className="credentialList">
+            <div>
+              <h3>Medical School</h3>
+              <p>University of Texas Southwestern Medical Center, Dallas, TX</p>
+            </div>
+
+            <div>
+              <h3>Clinical Molecular Genetics Fellowship</h3>
+              <p>Icahn School of Medicine at Mount Sinai, New York, NY</p>
+            </div>
+
+            <div>
+              <h3>Combined Pediatrics / Clinical Genetics Residency</h3>
+              <p>Icahn School of Medicine at Mount Sinai, New York, NY</p>
+            </div>
           </div>
         </div>
         </div>
