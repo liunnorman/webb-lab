@@ -503,57 +503,132 @@ footer {
 }
 
 .profileHero {
+  align-items: stretch;
   background: white;
   border-bottom: 1px solid var(--line);
   display: grid;
-  grid-template-columns: minmax(360px, 48%) 1fr;
-  min-height: 640px;
+  grid-template-columns: minmax(280px, 34%) 1fr;
+  min-height: 520px;
 }
 
 .profileIntro {
-  border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7vw 5vw;
+  padding: 5vw;
 }
 
 .profileIntro h1 {
-  font-size: clamp(4rem, 7vw, 8rem);
-  line-height: 0.9;
+  font-size: clamp(3.6rem, 6vw, 7rem);
+  line-height: 0.92;
+  margin: 0 0 1rem;
+}
+
+.profileTitle {
+  color: var(--red-dark);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
   margin: 0 0 1.5rem;
 }
 
 .profileIntro p {
   color: var(--text);
   line-height: 1.8;
-  max-width: 640px;
+  max-width: 760px;
 }
 
 .profilePortrait {
-  background: var(--soft);
+  background: white;
+  border-right: 1px solid var(--line);
   margin: 0;
-  min-height: 640px;
+  min-height: 520px;
   overflow: hidden;
+  padding: 3rem;
 }
 
 .profilePortrait img {
+  border: 1px solid var(--line);
   display: block;
   height: 100%;
-  min-height: 640px;
+  min-height: 420px;
   object-fit: cover;
   object-position: center 18%;
   width: 100%;
 }
 
+.profileActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.profileActions a {
+  border-bottom: 1px solid var(--red-dark);
+  color: var(--red-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
 .profileContent {
+  background: white;
+  display: grid;
+  grid-template-columns: minmax(280px, 30%) 1fr;
+}
+
+.profileDetails {
+  background: var(--soft);
+  border-right: 1px solid var(--line);
+  padding: 3rem 5vw;
+}
+
+.profileDetails div {
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.profileDetails div:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.profileDetails h2 {
+  color: var(--red-dark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+}
+
+.profileDetails p,
+.profileDetails a {
+  color: var(--text);
+  display: block;
+  line-height: 1.6;
+  margin: 0.35rem 0;
+}
+
+.profileDetails a {
+  color: var(--red-dark);
+  font-weight: 800;
+}
+
+.profileMain {
   background: white;
 }
 
 .profileSection {
   border-bottom: 1px solid var(--line);
   display: grid;
-  grid-template-columns: minmax(260px, 32%) 1fr;
+  grid-template-columns: minmax(220px, 28%) 1fr;
 }
 
 .profileSection h2 {
@@ -573,23 +648,6 @@ footer {
   color: var(--text);
   line-height: 1.8;
   margin-top: 0;
-}
-
-.profileLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  margin-top: 2rem;
-}
-
-.profileLinks a {
-  border-bottom: 1px solid var(--red-dark);
-  color: var(--red-dark);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  padding-bottom: 6px;
-  text-transform: uppercase;
 }
 
 .publications {
@@ -958,6 +1016,7 @@ footer {
 .peopleGrid,
 .piCard,
 .profileHero,
+.profileContent,
 .profileSection,
 .publicationsIntro,
 .publicationCTA,
@@ -1007,6 +1066,16 @@ footer {
   .profilePortrait,
   .profilePortrait img {
     min-height: 420px;
+  }
+
+  .profilePortrait {
+    border-right: none;
+    padding: 1.5rem 5vw 0;
+  }
+
+  .profileDetails {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
   }
 
   .profileSection h2 {

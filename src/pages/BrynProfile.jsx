@@ -8,19 +8,33 @@ export default function BrynProfile() {
       <SiteNav />
 
       <section className="profileHero">
-        <div className="profileIntro">
-          <p className="eyebrow">Principal Investigator</p>
-          <h1>Bryn Webb, MD</h1>
-          <p>
-            Dr. Webb leads a translational research program focused on rare
-            pediatric disorders, clinical genomics, stem cell disease modeling,
-            and functional approaches to understand disease mechanisms.
-          </p>
-        </div>
-
         <figure className="profilePortrait">
           <img src={brynHeadshot} alt="Bryn Webb, MD" />
         </figure>
+
+        <div className="profileIntro">
+          <p className="eyebrow">Faculty Profile</p>
+          <h1>Bryn Webb, MD</h1>
+          <p className="profileTitle">
+            Principal Investigator · Associate Professor
+          </p>
+          <p>
+            The Webb Laboratory integrates disease gene discovery, stem cell
+            disease modeling, functional genomics, and translational research
+            for rare pediatric disorders.
+          </p>
+
+          <div className="profileActions">
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/?term=Webb+Bryn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PubMed →
+            </a>
+            <Link to="/#research">Lab Research →</Link>
+          </div>
+        </div>
       </section>
 
       <div className="backBand">
@@ -28,8 +42,33 @@ export default function BrynProfile() {
       </div>
 
       <section className="profileContent">
+        <aside className="profileDetails">
+          <div>
+            <h2>Title</h2>
+            <p>Principal Investigator</p>
+            <p>Associate Professor</p>
+          </div>
+
+          <div>
+            <h2>Institution</h2>
+            <p>University of Wisconsin School of Medicine and Public Health</p>
+          </div>
+
+          <div>
+            <h2>On the Web</h2>
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/?term=Webb+Bryn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PubMed Profile →
+            </a>
+          </div>
+        </aside>
+
+        <div className="profileMain">
         <div className="profileSection">
-          <h2>About</h2>
+          <h2>Overview</h2>
           <div>
             <p>
               The Webb Laboratory works at the intersection of pediatric
@@ -49,18 +88,8 @@ export default function BrynProfile() {
               through deep phenotyping, genomic discovery, patient-derived stem
               cell models, and disease-relevant functional assays.
             </p>
-
-            <div className="profileLinks">
-              <a
-                href="https://pubmed.ncbi.nlm.nih.gov/?term=Webb+Bryn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PubMed Profile →
-              </a>
-              <Link to="/#research">Lab Research →</Link>
-            </div>
           </div>
+        </div>
         </div>
       </section>
 
