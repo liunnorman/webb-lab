@@ -94,7 +94,7 @@ function HomePage() {
 },
   {
   name: "Sid Satheesh",
-  role: "Undergraduate Researcher",
+  role: "Undergraduate Research Assistant",
   image: sidHeadshot
 },
   {
