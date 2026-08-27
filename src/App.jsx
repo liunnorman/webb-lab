@@ -12,6 +12,7 @@ import normanHeadshot from "./assets/norman.jpg";
 import laurenHeadshot from "./assets/lauren.jpg";
 import irshadHeadshot from "./assets/irshad.png";
 import quinnHeadshot from "./assets/quinn.jpeg";
+import sidHeadshot from "./assets/sid-satheesh.jpeg";
 import DiseasePage from "./pages/DiseasePage";
 import { diseaseList } from "./pages/diseaseData";
 
@@ -90,6 +91,11 @@ function HomePage() {
   name: "Lauren Onigkeit",
   role: "Undergraduate Research Assistant",
   image: laurenHeadshot
+},
+  {
+  name: "Sid Satheesh",
+  role: "Undergraduate Researcher",
+  image: sidHeadshot
 },
   {
   name: "Quinn Koffman",
