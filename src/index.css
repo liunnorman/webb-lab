@@ -502,6 +502,96 @@ footer {
   max-width: 680px;
 }
 
+.profileHero {
+  background: white;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(360px, 48%) 1fr;
+  min-height: 640px;
+}
+
+.profileIntro {
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7vw 5vw;
+}
+
+.profileIntro h1 {
+  font-size: clamp(4rem, 7vw, 8rem);
+  line-height: 0.9;
+  margin: 0 0 1.5rem;
+}
+
+.profileIntro p {
+  color: var(--text);
+  line-height: 1.8;
+  max-width: 640px;
+}
+
+.profilePortrait {
+  background: var(--soft);
+  margin: 0;
+  min-height: 640px;
+  overflow: hidden;
+}
+
+.profilePortrait img {
+  display: block;
+  height: 100%;
+  min-height: 640px;
+  object-fit: cover;
+  object-position: center 18%;
+  width: 100%;
+}
+
+.profileContent {
+  background: white;
+}
+
+.profileSection {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(260px, 32%) 1fr;
+}
+
+.profileSection h2 {
+  border-right: 1px solid var(--line);
+  font-size: 2.4rem;
+  line-height: 1;
+  margin: 0;
+  padding: 3rem 2rem 3rem 5vw;
+}
+
+.profileSection > div {
+  max-width: 900px;
+  padding: 3rem 5vw;
+}
+
+.profileSection p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-top: 0;
+}
+
+.profileLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.profileLinks a {
+  border-bottom: 1px solid var(--red-dark);
+  color: var(--red-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
 .publications {
   padding: 7vw 5vw;
   background: var(--soft);
@@ -867,6 +957,8 @@ footer {
 .peopleIntro,
 .peopleGrid,
 .piCard,
+.profileHero,
+.profileSection,
 .publicationsIntro,
 .publicationCTA,
 .join {
@@ -907,7 +999,18 @@ footer {
 
   .heroText,
   .number,
-  .researchText {
+  .researchText,
+  .profileIntro {
+    border-right: none;
+  }
+
+  .profilePortrait,
+  .profilePortrait img {
+    min-height: 420px;
+  }
+
+  .profileSection h2 {
+    border-bottom: 1px solid var(--line);
     border-right: none;
   }
 

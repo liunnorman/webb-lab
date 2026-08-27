@@ -13,6 +13,7 @@ import laurenHeadshot from "./assets/lauren.jpg";
 import irshadHeadshot from "./assets/irshad.png";
 import quinnHeadshot from "./assets/quinn.jpeg";
 import sidHeadshot from "./assets/sid-satheesh.jpeg";
+import BrynProfile from "./pages/BrynProfile";
 import DiseasePage from "./pages/DiseasePage";
 import { diseaseList } from "./pages/diseaseData";
 
@@ -22,6 +23,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/people/bryn-webb" element={<BrynProfile />} />
         <Route path="/diseases/:slug" element={<DiseasePage />} />
       </Routes>
     </>
@@ -232,6 +234,9 @@ function HomePage() {
               modeling, and functional approaches to understand disease
               mechanisms.
             </p>
+            <Link className="button" to="/people/bryn-webb">
+              View Profile →
+            </Link>
           </div>
         </article>
 
