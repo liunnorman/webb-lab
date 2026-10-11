@@ -13,6 +13,7 @@ import laurenHeadshot from "./assets/lauren.jpg";
 import irshadHeadshot from "./assets/irshad.png";
 import quinnHeadshot from "./assets/quinn.jpeg";
 import sidHeadshot from "./assets/sid-satheesh.jpeg";
+import abigailHeadshot from "./assets/abigail-farca.jpeg";
 import BrynProfile from "./pages/BrynProfile";
 import DiseasePage from "./pages/DiseasePage";
 import { diseaseList } from "./pages/diseaseData";
@@ -98,6 +99,11 @@ function HomePage() {
   name: "Sid Satheesh",
   role: "Undergraduate Research Assistant",
   image: sidHeadshot
+},
+  {
+  name: "Abigail Farca",
+  role: "Undergraduate Research Assistant",
+  image: abigailHeadshot
 },
   {
   name: "Quinn Koffman",

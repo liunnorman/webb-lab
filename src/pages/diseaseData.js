@@ -179,14 +179,19 @@ export const diseases = {
         "https://pubmed.ncbi.nlm.nih.gov/39908527/",
       ],
       [
-        "An algorithm to identify patients aged 0-3 with rare genetic disorders.",
-        "Orphanet Journal of Rare Diseases, 2024",
-        "https://pubmed.ncbi.nlm.nih.gov/38698482/",
+        "Sequence variants in HECTD1 result in a variable neurodevelopmental disorder.",
+        "American Journal of Human Genetics, 2025",
+        "https://pubmed.ncbi.nlm.nih.gov/39879987/",
       ],
       [
         "What Is the Nature and Scope of Physicians' Duties of Care to Patients Without a Diagnosis?",
         "AMA Journal of Ethics, 2025",
         "https://pubmed.ncbi.nlm.nih.gov/41032342/",
+      ],
+      [
+        "USP34 Haploinsufficiency as a Cause of Neurodevelopmental Phenotypes.",
+        "Clinical Genetics, 2026",
+        "https://pubmed.ncbi.nlm.nih.gov/42315110/",
       ],
     ],
   },
